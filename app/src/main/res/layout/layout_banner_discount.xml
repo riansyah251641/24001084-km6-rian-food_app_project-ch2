@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="24dp">
-        
+
         <ImageView
             android:id="@+id/logo_resto"
             android:layout_width="80dp"
@@ -42,6 +42,7 @@
             android:textSize="24sp"
             app:layout_constraintStart_toEndOf="@+id/logo_resto"
             app:layout_constraintTop_toTopOf="@+id/logo_resto"
+            app:layout_constraintBottom_toTopOf="@+id/banner_slogan"
             android:layout_marginStart="8dp"
             />
         <TextView
@@ -49,10 +50,11 @@
             android:layout_width="0dp"
             android:textColor="@color/white"
             android:layout_height="wrap_content"
-            android:text="Eat Burger Well"
+            android:text="Eat Burger Well doneee"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/logo_resto"
             app:layout_constraintTop_toBottomOf="@+id/banner_title"
+            app:layout_constraintBottom_toBottomOf="pa"
             android:layout_marginStart="8dp"
             />
 
