@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+   <TextView
+    android:id="@+id/hii"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/greating_users"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    android:ellipsize="end"
+    android:maxLines="1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/detail_of_hii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_greating_add"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/hii"
+        app:layout_constraintEnd_toStartOf="@+id/iv_icon_card"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/iv_icon_card"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/iv_icon_card"
+        app:layout_constraintStart_toEndOf="@+id/detail_of_hii"
+        app:layout_constraintEnd_toEndOf="@+id/iv_profile"
+        app:layout_constraintTop_toTopOf="@+id/hii"
+        />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/iv_profile_users"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon_card"
+        app:layout_constraintTop_toTopOf="@+id/hii"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

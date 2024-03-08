@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">food_app_project</string>
+    <string name="greating_users">Hii Ryan!</string>
+    <string name="detail_greating_add">Mau Makan Apa Hari ini?</string>
+    <string name="banner_welcome">Selamat Datang di</string>
+    <string name="banner_title">BIGIBURGER</string>
+    <string name="name_list_food">List Menu Makanan</string>
+    <string name="namer_catalog">isi text</string>
+    <string name="name_product">Nama Jenis Pizza</string>
+    <string name="price_info">price list</string>
+    <string name="text_kategori">Kategori Makanan</string>
+</resources>
