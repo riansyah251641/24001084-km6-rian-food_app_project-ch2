@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:padding="8dp"
     tools:context=".MainActivity">
 
@@ -82,9 +82,10 @@
         android:layout_marginVertical="8dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:layout_constraintTop_toBottomOf="@+id/text_listmenu"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_listmenu"
         app:spanCount="2"
+        tools:layout_editor_absoluteX="8dp"
         tools:listitem="@layout/item_list_of_pizza" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
