@@ -9,4 +9,9 @@
     <string name="name_product">Nama Jenis Pizza</string>
     <string name="price_info">price list</string>
     <string name="text_kategori">Kategori Makanan</string>
+    <string name="text_price_detail">Rp 50.000</string>
+    <string name="text_tiitle_detail">Caprize</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="text_count_order">1</string>
+    <string name="order_detail_button">Tambah Ke Keranjang - Rp</string>
 </resources>
