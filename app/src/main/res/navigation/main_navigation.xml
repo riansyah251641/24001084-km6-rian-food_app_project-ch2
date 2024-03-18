@@ -3,20 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/foodCategoryListFragment">
+    app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/foodCategoryListFragment"
+        android:id="@+id/navigation_home"
         android:name="com.example.food_app_project.presentation.foodcategorylist.FoodCategoryListFragment"
         android:label="fragment_food_category_list"
         tools:layout="@layout/fragment_food_category_list" >
-        <action
-            android:id="@+id/action_foodCategoryListFragment_to_foodDetailFragment"
-            app:destination="@id/foodDetailFragment" />
     </fragment>
     <fragment
-        android:id="@+id/foodDetailFragment"
-        android:name="com.example.food_app_project.presentation.foodcategorydetail.FoodDetailFragment"
-        android:label="fragment_food_detail"
-        tools:layout="@layout/fragment_food_detail" />
+        android:id="@+id/navigation_about"
+        android:name="com.example.food_app_project.presentation.about.AboutMainFragment"
+        android:label="fragment_about_main"
+        tools:layout="@layout/fragment_about_main" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.food_app_project.presentation.profile.ProfilMainFragment"
+        android:label="fragment_profil_main"
+        tools:layout="@layout/fragment_profil_main" />
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.food_app_project.presentation.setting.SettingMainFragment"
+        android:label="fragment_setting_main"
+        tools:layout="@layout/fragment_setting_main" />
 </navigation>

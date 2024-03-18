@@ -28,15 +28,15 @@ class DataSourceFoodPizza(): DataSourceFoodCatalog{
                 name = "Drougno Pizza",
                 description = "Pizza premium dengan saus tomat spesial, keju mozarella impor, dan topping unik.",
                 price = 150000.0,
-                location = "Jl. Delizioso No. 20, Kota Suka Rasa, Provinsi Savoria, Indonesia.",
+                location = "Jl. Raya Jemursari No.136, Kendangsari, Kec. Tenggilis Mejoyo, Surabaya, Jawa Timur 60292",
                 image = R.drawable.item_pizza_drougno,
             ),
             Catalog(
                 category = "pizza",
-                name = "Drougno Pizza",
+                name = "Mantappo Pizza",
                 description = "Pizza premium dengan saus tomat spesial, keju mozarella impor, dan topping unik.",
                 price = 150000.0,
-                location = "Jl. Delizioso No. 20, Kota Suka Rasa, Provinsi Savoria, Indonesia.",
+                location = "Jl. Dr. Ir. H. Soekarno No.Kel, Kedung Baruk, Kec. Rungkut, Surabaya, Jawa Timur 60298",
                 image = R.drawable.item_pizza_drougno,
             ),
             Catalog(
@@ -44,7 +44,7 @@ class DataSourceFoodPizza(): DataSourceFoodCatalog{
                 name = "Melerno Pizza",
                 description = "Pizza premium dengan saus tomat khas, keju mozzarella, dan daging sapi panggang",
                 price = 200000.0,
-                location = "Jl. Surya Murni No. 25, Kota Delizioso, Provinsi Savoria, Indonesia.",
+                location = "Jl. Kenjeran No.455, Gading, Kec. Tambaksari, Surabaya, Jawa Timur 60134",
                 image = R.drawable.item_pizza_melerlo,
             ),
             Catalog(
@@ -52,7 +52,7 @@ class DataSourceFoodPizza(): DataSourceFoodCatalog{
                 name = "Pedaso Pizza",
                 description = "Pizza lezat dengan saus tomat segar, keju cheddar, dan potongan sosis.",
                 price = 220000.0,
-                location = "Jl. Bahagia Indah No. 10, Kota Suka Rasa, Provinsi Senang Makmur, Indonesia. ",
+                location = "Jl. Raya Dharma Husada Indah No.115 E, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285",
                 image =  R.drawable.item_pizza_pedaso,
             ),
             Catalog(
@@ -60,7 +60,7 @@ class DataSourceFoodPizza(): DataSourceFoodCatalog{
                 name = "Mediterranean Pizza",
                 description = "Pizza eksotis dengan saus pesto, keju feta, dan olive kalamata.",
                 price = 180000.0,
-                location = "Jl. Bahari Raya No. 15, Kota Bahagia, Provinsi Deliciosa, Indonesia ",
+                location = "Jl. Raya Darmo No.79 A, Keputran, Kec. Tegalsari, Surabaya, Jawa Timur 60265 ",
                 image =  R.drawable.item_pizza_mediterranean,
             ),
         )

@@ -6,15 +6,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.food_app_project.R.id
 import com.example.food_app_project.R
 import com.example.food_app_project.data.datasource.DataSourceFoodCatalog
+import com.example.food_app_project.data.datasource.DataSourceFoodCategory
+import com.example.food_app_project.data.datasource.DataSourceFoodCategoryImpl
 import com.example.food_app_project.data.datasource.DataSourceFoodPizza
 import com.example.food_app_project.data.model.Catalog
 import com.example.food_app_project.databinding.FragmentFoodCategoryListBinding
+import com.example.food_app_project.presentation.adapter.CategoryAdapter
 import com.example.food_app_project.presentation.foodcategorydetail.FoodDetailActivity
 import com.example.food_app_project.presentation.foodcategorydetail.FoodDetailFragment
 import com.example.food_app_project.presentation.foodcategorylist.adapter.FoodListAdapter
@@ -26,7 +29,9 @@ class FoodCategoryListFragment : Fragment() {
     private lateinit var binding: FragmentFoodCategoryListBinding
     private var adapter: FoodListAdapter? = null
     private val dataSource: DataSourceFoodCatalog by lazy { DataSourceFoodPizza() }
+    private val dataSourceCatalog: DataSourceFoodCategory by lazy { DataSourceFoodCategoryImpl() }
     private var isUsingGridMode: Boolean = false
+    private val categoryAdapter = CategoryAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,7 +75,13 @@ class FoodCategoryListFragment : Fragment() {
             layoutManager = GridLayoutManager(requireContext(), if(typeMode) 2 else 1)
         }
         adapter?.submitData(dataSource.getFoodCatalogItem())
+
+        binding.rvListOfCategory.apply {
+            adapter = this@FoodCategoryListFragment.categoryAdapter
+        }
+        categoryAdapter.submitData(dataSourceCatalog.getFoodCategoryItem())
     }
+
 
 
 // using navigation
@@ -92,6 +103,5 @@ private fun navigateToDetail(item: Catalog) {
             item.image,
         )
     )
-    Toast.makeText(requireContext(), "Navigate to profile yaa", Toast.LENGTH_SHORT).show()
 }
 }
