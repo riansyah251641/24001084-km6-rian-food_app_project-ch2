@@ -3,15 +3,13 @@
     <string name="greating_users">Hii Ryan!</string>
     <string name="detail_greating_add">Mau Makan Apa Hari ini?</string>
     <string name="banner_welcome">Selamat Datang di</string>
-    <string name="banner_title">BIGIBURGER</string>
+    <string name="banner_title"> RATATOUILLE</string>
     <string name="name_list_food">List Menu Makanan</string>
     <string name="namer_catalog">isi text</string>
     <string name="name_product">Nama Jenis Pizza</string>
     <string name="price_info">price list</string>
     <string name="text_kategori">Kategori Makanan</string>
-    <string name="text_price_detail">Rp 50.000</string>
-    <string name="text_tiitle_detail">Caprize</string>
-    <string name="lokasi">Lokasi</string>
-    <string name="text_count_order">1</string>
-    <string name="order_detail_button">Tambah Ke Keranjang - Rp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_tagline">I only want to eat the good stuff</string>
 </resources>

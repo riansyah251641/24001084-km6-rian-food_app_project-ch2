@@ -1,4 +1,4 @@
-package com.example.food_app_project.model
+package com.example.food_app_project.data.model
 
 import androidx.annotation.DrawableRes
 import java.util.UUID
